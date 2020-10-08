@@ -57,6 +57,8 @@ home_space()
 	echo "</pre>"
 }
 
+#brief: function to write the html file,
+# can be outputed to secific file name
 write_page()
 {
 	cat <<- _EOF_
@@ -76,11 +78,13 @@ write_page()
 _EOF_
 }
 
+#brief: explains how the output file will be used
 usage()
 {
 	echo "usage: sysinfo_page [[[-f file ] [-i]] |[-h]]"
 }
 
+#brief: allows the user to exit gracefully, if they are not root
 error_exit()
 {
 	echo "$1" 1>&2
