@@ -1,18 +1,131 @@
 #!/bin/bash
 
-#sysinfo_page - a script to product an HTML file
+#File: sysinfo_page
+#Brief:  a script to product an HTML file
+#Author: Olivia Van Pelt
+#Project: scripting 1
+#Date: 10/6/2020
 
-cat <<- _EOF_
+##### Constants
+
+TITLE="System's Information for $HOSTNAME"
+RIGHT_NOW="$(date +"%x %r %Z")"
+Time_STAMP="Updated on $RIGHT_NOW by $USER"
+
+##### Functions
+
+#briet: fuction to display the release files in /etc
+system_info()
+{
+	if ls /etc/*release 1>/dev/null 2>&1; then
+		echo "<h2>System release info</h2>"
+		echo "<pre>"
+		for i in /etc/*release; do
+			head -n 1 "$i"
+		done
+		uname -orp
+		echo "</pre>"
+	fi
+
+}
+
+#brief: function to display the reformated system uptime
+show_uptime()
+{
+	echo "<h2>System uptime</h2>"
+	echo "<pre>"
+	uptime
+	echo "</pre>"
+}
+
+#brief: function to display th epreformated drive space on the system
+drive_space()
+{
+	echo "<h2>Filesystem space</h2>"
+	echo "<pre>"
+	df
+	echo "</pre>"
+}
+
+#brief: function to display the home users preformated home directory space
+home_space()
+{
+	echo "<h2>Home directory space by user</h2>"
+	echo "<pre>"
+	echo "Bytes Directory"
+	du -s /home/* |sort -nr
+	echo "</pre>"
+}
+
+write_page()
+{
+	cat <<- _EOF_
 	<html>
-	<head>
-		<title>
-		My System Information
-		</title>
-	</head>
-
-	<body>
-	<h1>My System Information</h1>
-	</body>
+		<head>
+		<title>$TITLE</title>
+		</head>
+		<body>
+		<h1>$TITLE</h1>
+		<p>$TIME_STAMP</p>
+		$(system_info)
+		$(show_uptime)
+		$(drive_space)
+		$(home_space)
+		</body>
 	</html>
 _EOF_
+}
 
+usage()
+{
+	echo "usage: sysinfo_page [[[-f file ] [-i]] |[-h]]"
+}
+
+error_exit()
+{
+	echo "$1" 1>&2
+	exit 1
+}
+
+##### Main
+if [ "$(id -u)" = "0" ]; then
+	interactive=
+	filename=~/sysinfo_page.html
+
+	while [ "$1" != "" ]; do
+		case $1 in
+			-f | --file)		shift
+						filename=$1
+						;;
+			-i | --interactive )	interactive=1
+						;;
+			-h | --help )		usage
+						exit
+						;;
+			* )			usage
+						exit 1
+		esac
+		shift
+	done
+
+	if [ "$interactive" = "1" ]; then
+		response=
+		read -p "Enter name of output file [$filename] > " response
+		if [ -n "$response" ]; then
+			filename="$response"
+		fi
+		if [ -f $filename ]; then
+			echo -n "Output file exists. Overwrite? (y/n) > "
+			read response
+			if [ "$response" != "y" ]; then
+				echo "Exiting program"
+				exit 1
+			fi
+		fi
+	fi
+
+	write_page > $filename
+
+else
+	error_exit "You must be Root user to access this script"
+fi
