@@ -38,7 +38,7 @@ show_uptime()
 	echo "</pre>"
 }
 
-#brief: function to display th epreformated drive space on the system
+#brief: function to display the preformated drive space on the system
 drive_space()
 {
 	echo "<h2>Filesystem space</h2>"
@@ -53,7 +53,7 @@ home_space()
 	echo "<h2>Home directory space by user</h2>"
 	echo "<pre>"
 	echo "Bytes Directory"
-	du -s /home/* |sort -nr
+	du -s /home/* | sort -nr
 	echo "</pre>"
 }
 
