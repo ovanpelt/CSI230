@@ -8,9 +8,9 @@
 
 ##### Constants
 
-TITLE="System's Information for $HOSTNAME"
+TITLE="System Information for $HOSTNAME"
 RIGHT_NOW="$(date +"%x %r %Z")"
-Time_STAMP="Updated on $RIGHT_NOW by $USER"
+TIME_STAMP="Updated on $RIGHT_NOW by $USER"
 
 ##### Functions
 
@@ -57,6 +57,24 @@ home_space()
 	echo "</pre>"
 }
 
+#brief: displays system ip adress
+ip_display()
+{
+	echo "<h2>Sysytem Ip</h2>"
+	echo "<pre>"
+	ip address
+	echo "</pre>"
+}
+
+#brief: calculates and displays the number of days left in the semester
+days_until_end()
+{
+	DATETODAY=$(date -d "$1" +%s)
+	DATECLASSESEND=$(date -d "12/18/2020" +%s)
+	echo "<h2>How much longer is this semester?</h2>"
+	echo $((($DATECLASSESEND-$DATETODAY)/86400)) days til school ends
+}
+
 #brief: function to write the html file,
 # can be outputed to secific file name
 write_page()
@@ -73,6 +91,8 @@ write_page()
 		$(show_uptime)
 		$(drive_space)
 		$(home_space)
+		$(ip_display)
+		$(days_until_end)
 		</body>
 	</html>
 _EOF_
