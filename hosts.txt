@@ -1,0 +1,4 @@
+champlain.edu
+uvm.edu
+und.edu
+doesnotexist.edu
