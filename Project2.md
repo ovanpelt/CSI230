@@ -21,9 +21,11 @@ https://www.tecmint.com/force-user-to-change-password-next-login-in-linux/
 Right around here is where i had my second mental breakdown because none of the passwords I made worked
 So i learned from my professor that you need to re-encrypt the password so it gets hashed into the user
 
-
+I had a quick refresher on how to send output to dev null so the chage commands were not writing to the console
+https://www.cyberciti.biz/faq/how-to-redirect-output-and-errors-to-devnull/
 
 here is a video I used to learn more about sending emails from linux
 https://www.youtube.com/watch?v=IXUpFCmKUwo
 this is the resource i used to find a modern version on Gksu
 https://itsfoss.com/gksu-replacement-ubuntu/
+Just kidding these didnt work because of an error connecting to my port 25.
