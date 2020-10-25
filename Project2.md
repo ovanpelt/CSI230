@@ -29,3 +29,5 @@ https://www.youtube.com/watch?v=IXUpFCmKUwo
 this is the resource i used to find a modern version on Gksu
 https://itsfoss.com/gksu-replacement-ubuntu/
 Just kidding these didnt work because of an error connecting to my port 25.
+
+current issues: cant download the right software to write an email, can not write a new password for user already taken
