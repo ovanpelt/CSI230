@@ -19,3 +19,7 @@ Then I researched some things on the chage command at this website
 https://www.tecmint.com/force-user-to-change-password-next-login-in-linux/
 
 Right around here is where i had my second mental breakdown because none of the passwords I made worked
+
+
+this is the resource i used to find a modern version on Gksu
+https://itsfoss.com/gksu-replacement-ubuntu/
