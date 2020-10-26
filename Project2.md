@@ -14,11 +14,13 @@ https://www.openssl.org/docs/man1.0.2/man1/rand.html
 
 I then loooked for a way to check if a user was in a group or not using the grep command here
 https://bytefreaks.net/gnulinux/bash/linux-check-if-a-user-or-a-group-exists
+and here
+https://stackoverflow.com/questions/18431285/check-if-a-user-is-in-a-group
 
 Then I researched some things on the chage command at this website
 https://www.tecmint.com/force-user-to-change-password-next-login-in-linux/
 
-Right around here is where i had my second mental breakdown because none of the passwords I made worked
+Right around here is where i had my second issue because none of the passwords I made worked
 So i learned from my professor that you need to re-encrypt the password so it gets hashed into the user
 
 I had a quick refresher on how to send output to dev null so the chage commands were not writing to the console
