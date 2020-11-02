@@ -37,8 +37,8 @@ void timer()
         displayClock(); 
   
         // sleep system call to sleep  
-        // for 1 second 
-        sleep(30); 
+        // for 600 second 
+        sleep(600); 
   
         // increment seconds 
         seconds++; 

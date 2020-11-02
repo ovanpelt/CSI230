@@ -16,7 +16,7 @@ do
 	passw=$(openssl rand -base64 12)
 	# if the username is Not already taken, create a new user
 	# and password
-	if groups $uname | grep -q 'CSI230'; then
+	if (groups $uname | grep -q '\bCSI230\b') >/dev/null 2>&1; then
 		usermod --password $(openssl passwd -crypt $passw) $uname
 	else
 		useradd -g 'CSI230' -m -p $(openssl passwd -crypt $passw) $uname
