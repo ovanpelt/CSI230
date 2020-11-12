@@ -14,7 +14,7 @@
 
 using namespace std;
 
-const string KMLHEADER1 = "<?xml version=\"1.0\" enccoding=\"UTF-8\"?>";
+const string KMLHEADER1 = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
 const string KMLHEADER2 = "<kml xmlns=\"http://www.opengis.net/kml/2.2\">";
 const string KMLFOOTER = "</kml>";
 const string KMLDOCSTART = "<Document>";
