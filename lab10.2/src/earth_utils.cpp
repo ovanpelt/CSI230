@@ -52,6 +52,6 @@ void WritePlacemark(ofstream& kmlFile, string name, string latitude, string long
 {
     kmlFile << "<Placemark>" <<endl;
     kmlFile << "<name>" << name << "</name>" << endl;
-    kmlFile<<"<Point>" << "<coordinates>" << latitude << ", "<< longitude << "</coordinates>" << "</Point>" << endl;
+    kmlFile<<"<Point>" << "<coordinates>" << longitude << ", "<< latitude << "</coordinates>" << "</Point>" << endl;
     kmlFile << "</Placemark>" << endl;
 }
