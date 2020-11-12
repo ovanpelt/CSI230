@@ -1,0 +1,2 @@
+Wed Nov 11 18:23:30 2020 mine main[40364]: The kmlfile is: mykmlfile.csv and the logfile is: mylogfile.txt
+Wed Nov 11 18:24:10 2020 pop-os main[40465]: The kmlfile is: mykmlfile.csv and the logfile is: mylogfile.txt
