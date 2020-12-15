@@ -22,3 +22,12 @@ an option choice entered by the user, so I decided to go a different route.
 
 I wanted the user to be able to create a logged list, like a flight record where they could document the order in which
 they wanted to visit each city. I did this by creating a struct for the city name, and the order to visit in.
+I had a very hard time passing the Stuct back and forth between the unit.cpp and the main driver. I tried having it be a global
+variable, and an extern but niether worked correctly so I declared it as static and passed it in as a parameter as well.
+
+Finally I added the section for the user to imput their desired number options. I had them orignally enter the long string of 
+numbers all at once, then I decided to enter them one at a time would be simpler. I created a second struct array to allow
+the new order of cities visited to be added back into the log file after the user changes them.
+
+Im happy with how my final project turned out, even if I ran into some issues and had to step away from my computer 
+quite a few times.
