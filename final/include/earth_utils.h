@@ -1,9 +1,9 @@
 /**
 * @file earth_utils.h
-* @brief file for handling declaring google earth fuction
+* @brief file for handling declaring google earth and logging fuction
 * @author Olivia Van Pelt
-* @assignment Lecture 10.2
-* @date 11/11/2020
+* @assignment Final
+* @date 12/11/2020
 * credits
 *
 */
@@ -31,6 +31,7 @@ struct places {string city; int choice;};
  * @param inFile ifstream to open csv file
  * @param kmlFileName string containing kml file name
  * @param logFile ofstream referance
+ * @param orderPlaces an array of stucts for the order of cities
 */
 int processCSV(ifstream& inFile, string kmlFileName, ofstream& logFile, places orderPlaces[9]);
 
@@ -43,6 +44,7 @@ int processCSV(ifstream& inFile, string kmlFileName, ofstream& logFile, places o
  * @param longitude string longitude
  * @param elevation string elevation, default zero
  * @param logFile ofstream refferance, to log names
+ * @param orderPlaces an array of stucts for the order of cities
 */
 void WritePlacemark(ofstream& kmlFile, string name, string latitude, string longitude, ofstream& logFile, places orderPlaces[9]);
 
@@ -58,13 +60,19 @@ bool log(string msg, string programName, ofstream& logFile);
 
 
 /**
- * * @brief creates a discrete logging of names
- * @date 11/12/2020
+ * @brief creates a discrete logging of names
+ * @date 12/12/2020
  * @return returns a boolean showing if the name was writen
  * @param name string containing syslog messag
  * @param logFile ofstream refferance
+ * @param orderPlaces an array of stucts for the order of cities
 */
 bool logName(string name, ofstream& logFile, places orderPlaces[9]);
 
+/**
+ * @brief clears the startic variable count returning it to 1
+ * @date 12/12/2020
+ * @return returns nothing
+*/
 void clear();
 #endif

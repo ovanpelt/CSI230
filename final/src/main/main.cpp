@@ -1,10 +1,9 @@
 /**
-* @file 10.2.cpp
+* @file main.cpp
 * @brief file for main code
-*
 * @author Olivia Van Pelt
-* @assignment Lecture 10.2
-* @date 11/11/2020
+* @assignment Final
+* @date 12/11/2020
 * credits
 *
 */

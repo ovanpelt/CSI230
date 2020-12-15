@@ -1,9 +1,9 @@
 /**
 * @file earth_utils.cpp
-* @brief file for handling csv file
+* @brief file for handling csv/KML file, and logging
 * @author Olivia Van Pelt
-* @assignment Lecture 10.2
-* @date 11/11/2020
+* @assignment Final
+* @date 12/11/2020
 * credits
 *   
 */
