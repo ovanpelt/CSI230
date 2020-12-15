@@ -1,13 +1,30 @@
-Wed Nov 11 18:23:30 2020 mine main[40364]: The kmlfile is: mykmlfile.csv and the logfile is: mylogfile.txt
-Wed Nov 11 18:24:10 2020 pop-os main[40465]: The kmlfile is: mykmlfile.csv and the logfile is: mylogfile.txt
-Wed Nov 11 19:08:24 2020 pop-os main[42665]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 19:10:04 2020 pop-os main[42710]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 19:12:59 2020 pop-os main[42776]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 19:13:22 2020 pop-os main[42778]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 19:14:04 2020 pop-os main[42801]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 19:15:47 2020 pop-os main[42872]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 19:17:46 2020 pop-os main[42918]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 20:07:40 2020 pop-os main[44582]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 20:23:47 2020 pop-os main[44828]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 20:30:08 2020 pop-os main[44982]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
-Wed Nov 11 20:34:14 2020 pop-os main[45147]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
+Mon Dec 14 22:09:16 2020 pop-os main[88933]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
+Port-aux-Français, French Southern and Antarctic Lands is stop number: 1
+Marigot, Saint Martin is stop number: 2
+Brasilia, Brazil is stop number: 3
+Paris, France is stop number: 4
+New Delhi, India is stop number: 5
+Bamako, Mali is stop number: 6
+Bern, Switzerland is stop number: 7
+Charlotte Amalie, US Virgin Islands is stop number: 8
+Mata-Utu, Wallis and Futuna is stop number: 9
+Mon Dec 14 22:09:26 2020 pop-os main[88933]: User has changed the flight log:
+Paris, France is stop number: 1
+Bamako, Mali is stop number: 2
+Marigot, Saint Martin is stop number: 3
+Charlotte Amalie, US Virgin Islands is stop number: 4
+Port-aux-Français, French Southern and Antarctic Lands is stop number: 5
+Brasilia, Brazil is stop number: 6
+New Delhi, India is stop number: 7
+Bern, Switzerland is stop number: 8
+Mata-Utu, Wallis and Futuna is stop number: 9
+Mon Dec 14 22:17:18 2020 pop-os main[89125]: The kmlfile is: concap.csv and the logfile is: mylogfile.txt
+Port-aux-Français, French Southern and Antarctic Lands is stop number: 1
+Marigot, Saint Martin is stop number: 2
+Brasilia, Brazil is stop number: 3
+Paris, France is stop number: 4
+New Delhi, India is stop number: 5
+Bamako, Mali is stop number: 6
+Bern, Switzerland is stop number: 7
+Charlotte Amalie, US Virgin Islands is stop number: 8
+Mata-Utu, Wallis and Futuna is stop number: 9
